@@ -1,0 +1,431 @@
+::selection {
+  color: white;
+  background: rgb(211, 126, 28);
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background: hsla(0,0%,100%,.98);
+    transition: box-shadow .25s ease 0s;
+}
+
+.menu-4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .menu-4 * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .menu-4 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 0.5em;
+    overflow: hidden;
+  }
+  .menu-4 a {
+    padding: 0.3em 0;
+    color: #747474;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+    font-family: Roboto,Arial,sans-serif;
+  }
+  .menu-4 a:before,
+  .menu-4 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .menu-4 a:before {
+    bottom: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: #e67e22;
+  }
+  .menu-4 a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: #e67e22;
+    white-space: nowrap;
+  }
+  .menu-4 li:hover a,
+  .menu-4 .current a {
+    transform: translateY(100%);
+  }
+.navbar_logo{
+    margin-right: 700px;
+    margin-top: -10px;
+    width: 2%;
+}
+.WNBA{
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: Roboto,Arial,sans-serif;
+    color: #c47f29;
+  
+}
+.style-4{    margin-right: 50px;}
+
+.slides{
+  margin-left: -30%;
+}
+
+.text_next_to_slide{
+  margin-left: 75%;
+  margin-right: 5%;
+  margin-top: -35%;
+  color :#c47f29;
+  
+}
+
+.text1_next_to_slide a {
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-decoration: none;
+  list-style-type:upper-alpha;
+}
+.text1_next_to_slide :hover{
+  color: #747474;
+}
+
+.text2_next_to_slide a {
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-decoration: none;
+}
+.text2_next_to_slide :hover{
+  color: #747474;
+}
+.text3_next_to_slide a {
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-decoration: none;
+}
+.text3_next_to_slide :hover{
+  color: #747474;
+}
+.whatisbasketball{
+  background-color: #ffd699;
+  margin-top: 30%;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+#What_is_basketball{
+  margin-right: 60%;
+  margin-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 20%;
+}
+.what_is_basketball_video{
+  margin-left: 50%;
+  margin-top: -50%;
+  padding-bottom: 5%;
+}
+.what_is_basketball_text1{
+  font: italic 1.2em "Fira Sans", serif;
+  font-size: 30px;
+  color: white;
+}
+.what_is_basketball_text2{
+  font-size: 5px;
+  font: italic small-caps bold 16px/2 cursive;
+}
+
+.Basketballrules{
+  background-color: #ffa366;
+  margin-top: 5%;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+#Basketball_rules{
+  margin-right: 60%;
+  margin-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 20%;
+  
+}
+.Basketball_rules_video{
+  margin-left: 50%;
+  margin-top: -50%;
+  padding-bottom: 5%;
+}
+.Basketball_rules_text1{
+  font: italic 1.2em "Fira Sans", serif;
+  font-size: 30px;
+  color: white;
+}
+.Basketball_rules_text2{
+  font-size: 5px;
+  font: italic small-caps bold 16px/2 cursive;
+}
+.basketball_court{
+  margin-top: -100%;
+  margin-left: 50%;
+  margin-right: 15%;
+  border-radius: 20px;
+}
+
+#what_is_wnba{
+  background-color: #b89075;
+  margin-top: 45%;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  
+}
+.what_is_wnba_text{
+  padding-top: 3%;
+  margin-right: 60%;
+  margin-left: 5%;
+}
+.what_is_wnba_text1{
+  font: italic 1.2em "Fira Sans", serif;
+  font-size: 30px;
+  color: white;
+}
+.what_is_wnba_text2{
+  font-size: 5px;
+  font: italic small-caps bold 16px/2 cursive;
+}
+.what_is_wnba_video{
+  margin-left: 50%;
+  margin-right: 1%;
+  margin-top: -30%;
+  padding-bottom: 5%;
+}
+
+.button_learn_more{
+  background-color: white;
+  color:#c47f29;
+  font-family:italic 1.2em "Fira Sans", serif; 
+  cursor: pointer;
+  
+}
+.button_learn_more :hover{
+  background-color: #e67e22;
+  color:white;
+}
+
+
+#STATS {
+  font: italic 1.2em "Fira Sans", serif;
+  border-collapse: collapse;
+  width: 40%;
+  margin-top: 10%;
+}
+
+#STATS td, #STATS th {
+  border-bottom: 1px solid #747474;
+  padding: 8px;
+}
+
+
+
+#STATS tr:hover {background-color: #ddd;}
+
+#STATS th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #e67e22;
+  color: white;
+}
+.stats1{
+  margin-left: 5%;
+}
+.stats2{
+  margin-top: -29%;
+  margin-left: 50%;
+  margin-right: -60%;
+}
+.stats3{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.stats4{
+  margin-left: 50%;
+  margin-right: -60%;
+  margin-top: -29%;
+}
+.stats5{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.stats6{
+  margin-left: 50%;
+  margin-right: -60%;
+  margin-top: -29%;
+}
+
+
+.tour-row {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+  border: none;
+}
+
+.tour-item {
+  display: inline-block;
+  padding-right: .5em;
+}
+
+.tour-date {
+  color: #555;
+  width: 11%;
+  font-weight: bold;
+}
+
+.tour-city {
+  width: 24%;
+}
+
+.tour-arena {
+  width: 42%;
+}
+
+.tour-btn {
+  max-width: 19%;
+}
+
+.shop-item {
+  margin: 30px;
+  
+}
+
+
+
+
+.shop-item-image {
+  height: 250px;
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.shop-item-price {
+  flex-grow: 1;
+  color: #333;
+  font-size: 15px;
+}
+
+.shop-items {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.shop-items2{
+  margin-top:10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e7b271;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: .67em .67em;
+  cursor: pointer;
+}
+
+.btn-header {
+  margin: .5em 15% 2em 15%;
+  color: white;
+  border: 2px solid #2D9CDB;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 0;
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+  display: block;
+  margin: 0 auto;
+  color: #2D9CDB;
+  font-size: 4em;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #c47f29;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #e7b271;
+}
+.shop-item :hover{
+  cursor: pointer;
+}
+.img1{width:30%;}
+.img2{width:90%}
+
+#slides2{
+  margin-left: 10%;
+}
+.contenu_footer{
+  border-top: 1px solid #cea879;
+  font-size: 12px;
+  color: #bb8c2f;
+  text-align: center;
+  margin-top:10%;
+  margin-bottom: 3%;
+}
+.text1_footer{
+  margin-top: 5%;
+}

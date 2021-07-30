@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WomenNBA</title>
+    <link rel="stylesheet" href="../css/projet.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+<section class="navbar">
+    <div  class="navbar_logo"> 
+    <img src="/res/wnba_logo1.jpg" alt="wnba_logo1" >     
+        <!-- <h1 class="WNBA">WNBA</h1>  -->
+        </div>
+    <nav class="style-4">
+		<ul class="menu-4">
+		  <li class="current"><a href="home.html" data-hover="Home">Home</a></li>
+		  <li><a href="teams.html" data-hover="Teams">Teams</a></li>
+		  <li><a href="stats.html" data-hover="Stats">Stats</a></li>
+		  <li><a href="bestof.html" data-hover="News">News</a></li>
+		  <li><a href="Myprofile.html" data-hover="My profile">My profile</a></li>
+		</ul>
+	</nav>
+</section>
+</header>
+<section class="slides" id="home">
+  <div class="w3-content w3-display-container" style="max-width:800px">
+    <img class="mySlides" src="https://www.burgas.bg/uploads/posts/2019/27368bbcd36bc6e49a71171d16b95643.jpg" style="width:100%">
+     <img class="mySlides" src="https://blog.logomyway.com/wp-content/uploads/2017/01/nba-logo-1.jpg" style="width:100%">
+      <img class="mySlides" src="https://thetomagency.com/wp-content/uploads/2017/01/WNBA_Illo_featured6.jpg" style="width:100%">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+    <style>
+      .mySlides {display:none}
+      .w3-left, .w3-right, .w3-badge {cursor:pointer}
+      .w3-badge {height:13px;width:13px;padding:0}
+      </style>
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-white";
+    }
+    </script>
+  <div class="text_next_to_slide">
+   <ol >
+     <li><h1 class="text1_next_to_slide"><a href="#What_is_basketball"> What is basketball? </a></h1></li><br>
+     <li><h1 class="text2_next_to_slide"><a href="#Basketball_rules">Basketball rules :</a> </h1></li><br>
+     <li> <h1 class="text3_next_to_slide"><a href="#what_is_wnba">what is WNBA?</a></h1></li><br>
+   </ol>
+  </div>
+</section>
+<section class="whatisbasketball">
+  <div id="What_is_basketball">
+    <h1 class="what_is_basketball_text1">What is basketball ?</h1>
+     <p class="what_is_basketball_text2">Basketball is a team sport in which two teams, most commonly of five players each,
+        opposing one another on a rectangular court,compete with 
+        the primary objective of shooting a basketball
+        through the defender's hoop  while preventing the opposing team from shooting through their own hoop.
+        Invented in 1891 by Canadian-American gym teacher James Naismith in Springfield, Massachusetts, United States,
+        basketball has evolved to become one of the world's most popular and widely viewed sports. </p>
+  </div>
+  <div class="what_is_basketball_video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z-7yyyiNBzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="button_learn_more">
+    <a href="https://en.wikipedia.org/wiki/Basketball">
+      <button class="button_learn_more">learn more</button>
+    </a> 
+  </div>
+</section>
+<section  class="Basketballrules" >
+  <div id="Basketball_rules" >
+    <h1 class="Basketball_rules_text1">Basketball Rules :</h1>
+     <ol class="Basketball_rules_text2">
+      <li>The player must bounce, or dribble, the ball with one hand while moving both feet. If, at any time, both hands touch the ball or the player stops dribbling, the player must only move one foot. The foot that is stationary is called the pivot foot.</li>
+      <li>The basketball player can only take one turn at dribbling. In other words, once a player has stopped dribbling they cannot start another dribble. A player who starts dribbling again is called for a double-dribbling violation and looses the basketball to the other team. A player can only start another dribble after another player from either team touches or gains control of the basketball. This is usually after a shot or pass.</li>
+      <li>The ball must stay in bounds. If the offensive team looses the ball out of bounds the other team gets control of the basketball</li>
+      <li>The players hand must be on top of the ball while dribbling. If they touch the bottom of the basketball while dribbling and continue to dribble this is called carrying the ball and the player will lose the ball to the other team.</li>
+      <li>Once the offensive team crosses half court, they may not go back into the backcourt. This is called a backcourt violation. If the defensive team knocks the ball into the backcourt, then the offensive team can recover the ball legally.</li>
+      <li>The main rule for the defensive player is not to foul. A foul is described as gaining an unfair advantage through physical contact. There is some interpretation that has to be made by the referee, but, in general, the defensive player may not touch the offensive player in a way that causes the offensive player to lose the ball or miss a shot.</li>
+    </ol>
+  </div>
+  <div class="Basketball_rules_video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XbtmGKif7Ck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="button_learn_more">
+    <a href="https://www.masterclass.com/articles/basketball-rules-explained">
+      <button class="button_learn_more">learn more</button>
+    </a> 
+  </div>
+</section>
+<div class="basketball_court">
+  <img src="../res/basketball-court-layout.jpg" alt="basketball-court-layout">
+</div>
+<section id="what_is_wnba">
+  <div class="what_is_wnba_text">
+    <h1 class="what_is_wnba_text1">What is WNBA?</h1>
+    <p class="what_is_wnba_text2">The Women's National Basketball Association (WNBA) is a professional basketball league in the United States. It is currently composed of twelve teams. The league was founded on April 22, 1996, as the women's counterpart to the National Basketball Association (NBA), and league play started in 1997. The regular season is played from May to September, with the All Star game being played midway through the season in July (except in Olympic years) and the WNBA Finals at the end of September until the beginning of October.  </p>
+  <br>
+  </div>
+  <div class="what_is_wnba_video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hHSUpx5IaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="button_learn_more">
+    <a href="https://www.wnba.com/">
+      <button class="button_learn_more">learn more</button>
+    </a> 
+  </div>
+</section>
+
+  
+</body>
+</html>

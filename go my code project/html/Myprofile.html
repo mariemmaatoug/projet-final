@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <script src="../js/quiz.js" async></script>
+    <link rel="stylesheet" href="../css/Myprofile.css">
+    <script src="../js/projet.js" async></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="navbar">
+        <div  class="navbar_logo"> 
+        <img src="/res/wnba_logo1.jpg" alt="wnba_logo1" >     
+            <!-- <h1 class="WNBA">WNBA</h1>  -->
+            </div>
+        <nav class="style-4">
+            <ul class="menu-4">
+              <li class="current"><a href="home.html" data-hover="Home">Home</a></li>
+              <li><a href="teams.html" data-hover="Teams">Teams</a></li>
+              <li><a href="stats.html" data-hover="Stats">Stats</a></li>
+              <li><a href="bestof.html" data-hover="News">News</a></li>
+              <li><a href="Myprofile.html" data-hover="My profile">My profile</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="signin">
+
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Create Account</h1><br>
+                    
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <button>Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Sign in</h1><br>
+                    
+                    <span>or use your account</span>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button>Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="quiz">
+        <h2 class="quizHeader">Let's Take a Quiz!</h2>
+  
+        <table style="width:583px">
+        <tr>
+          <td>
+              <div>
+                  <p class="question">1. basketball team consists:</p>
+    
+                <ul>
+                <input class="answer" type="radio" name="q1" value="1">
+                <label id="correctString1">5 players</label>
+                <br>
+                <input class="answer" type="radio" name="q1" value="0">
+                <label>6 players</label>
+                <br>
+                <input class="answer" type="radio" name="q1" value="0">
+                <label>8 players</label>
+                <br>
+                <input class="answer" type="radio" name="q1" value="0">
+                <label>4 players</label>
+                </ul>
+              </div>
+          </td>
+          <td>
+              <div>
+                  <p class="question">2. WNBA stands for:</p>
+    
+                <ul>
+                <input class="answer" type="radio" name="q2" value="0">
+                <label>World National Basketball Assosiation</label>
+                <br>
+                <input class="answer" type="radio" name="q2" value="1">
+                <label id="correctString2">Women's National Basketball Association</label>
+                <br>
+                <input class="answer" type="radio" name="q2" value="0">
+                <label>Women's Normal Basketball Association</label>
+                <br>
+                <input class="answer" type="radio" name="q2" value="0">
+                <label>Who Needs Basketball Army</label>
+                </ul>
+              </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <div>
+                  <p class="question">3. Who is the best blocker:</p>
+    
+                <ul>
+                <input class="answer" type="radio" name="q3" value="0">
+                <label> ABreanna Stewart</label>
+                <br>
+                <input class="answer" type="radio" name="q3" value="1">
+                <label id="correctString3">Napheesa Collier</label>
+                <br>
+                <input class="answer" type="radio" name="q3" value="0">
+                <label>DeWanna Bonnerr</label>
+                <br>
+                <input class="answer" type="radio" name="q3" value="0">
+                <label>meee</label>
+                </ul>
+            </div>
+          </td>
+          <td>
+              <div>
+                  <p class="question">4.which of these teams is a WNBA team ?</p>
+    
+                <ul>
+                <input class="answer" type="radio" name="q4" value="0">
+                <label>Warriors</label>
+                <br>
+                <input class="answer" type="radio" name="q4" value="1">
+                <label id="correctString4">Seatle Storm</label>
+                <br>
+                <input class="answer" type="radio" name="q4" value="0">
+                <label>Lakers</label>
+                <br>
+                <input class="answer" type="radio" name="q4" value="0">
+                <label>Bucks</label>
+                </ul>
+              </div>
+          </td>
+        </tr>
+        </table>
+    <br/>
+      <div class="submitter">
+              <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+              type="submit" value="Submit" />
+        </div>
+      
+    <!--show only wrong answers on submit-->
+        <div class="quizAnswers" id="correctAnswer1"></div>
+            <div class="quizAnswers" id="correctAnswer2"></div>
+        <div class="quizAnswers" id="correctAnswer3"></div>
+        <div class="quizAnswers" id="correctAnswer4"></div>
+    
+    <!--show score upon submit-->
+        <div>
+            <h2 class="quizScore" id="userScore"></h2>
+        </div>
+        </div>
+    </section>
+</body>
+</html>

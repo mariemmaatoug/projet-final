@@ -1,0 +1,111 @@
+::selection {
+    color: white;
+    background: rgb(211, 126, 28);
+  }
+  .navbar{
+      display: flex;
+      justify-content: flex-end;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 3;
+      background: hsla(0,0%,100%,.98);
+      transition: box-shadow .25s ease 0s;
+  }
+  
+  .menu-4 {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .menu-4 * {
+      box-sizing: border-box;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    .menu-4 li {
+      display: inline-block;
+      list-style: outside none none;
+      margin: 0 0.5em;
+      overflow: hidden;
+    }
+    .menu-4 a {
+      padding: 0.3em 0;
+      color: #747474;
+      position: relative;
+      display: inline-block;
+      letter-spacing: 1px;
+      margin: 0;
+      text-decoration: none;
+      font-family: Roboto,Arial,sans-serif;
+    }
+    .menu-4 a:before,
+    .menu-4 a:after {
+      position: absolute;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    .menu-4 a:before {
+      bottom: 100%;
+      display: block;
+      height: 3px;
+      width: 100%;
+      content: "";
+      background-color: #e67e22;
+    }
+    .menu-4 a:after {
+      padding: 0.3em 0;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      content: attr(data-hover);
+      color: #e67e22;
+      white-space: nowrap;
+    }
+    .menu-4 li:hover a,
+    .menu-4 .current a {
+      transform: translateY(100%);
+    }
+  .navbar_logo{
+      margin-right: 700px;
+      margin-top: -10px;
+      width: 2%;
+  }
+  .WNBA{
+      font-weight: 500;
+      font-size: 30px;
+      text-decoration: none;
+      font-family: Roboto,Arial,sans-serif;
+      color: #c47f29;
+    
+  }
+  .style-4{    margin-right: 50px;}
+
+  .grid_teams{
+    margin-right:10%;
+    margin-left:10%;
+    list-style-type: none;
+    background-color:#f5b76c;
+    text-align:center;
+    margin-top:10%;
+    
+  }
+  .classdiv{
+    
+    text-size:10%;
+    color:#747474;
+    
+    padding-top:1%;
+    padding-bottom:1%
+    
+  }
+  .classdiv :hover {
+    color:#af6d1d;
+    cursor:pointer;
+  }
+  .naaame{
+    color:#6b4b24;
+    
+  }
+  

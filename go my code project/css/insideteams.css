@@ -1,0 +1,55 @@
+::selection {
+    color: white;
+    background: rgb(211, 126, 28);
+  }
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #c47f29;
+    color: white;
+  }
+.players_title{
+    color: #e7b271;
+    margin-left: 3%;
+}
+.coachs_titles{
+    color:#747474;
+    margin-left: 5%;
+}
+.titleee{
+    color: #c47f29;
+    text-align: center;
+    font-size: 40px;
+}
+.img_team{
+    margin-left: 50%;
+    margin-top: -20%;
+}
+.img_team2{
+    margin-left: 30%;
+    margin-top: -35%;
+    width: 60%;
+}
+.img_team3{margin-left: 40%;
+margin-top: -30%;
+}
+.img_team4{
+    margin-top: -20%;
+    margin-left: 50%;
+}
